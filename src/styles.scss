@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos Globais do Tema */
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+    &.large { font-size: 16px; }
+}
+
+/* Botões Globais */
+.btn-primary {
+    color: #fff;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover, &:focus, &:active {
+        background-color: #fec503;
+        border-color: #f6bf01;
+    }
+}
+
+/* Cores de utilidade */
+.text-primary { color: #fed136; }
+.bg-darkest-gray { background-color: #222; }
+
+section {
+    padding: 100px 0;
+    h2.section-heading { font-size: 40px; margin-bottom: 15px; }
+}

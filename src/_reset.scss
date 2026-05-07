@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}

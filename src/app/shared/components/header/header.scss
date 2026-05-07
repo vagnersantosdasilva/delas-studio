@@ -1,0 +1,68 @@
+/* Estilo específico do componente de Menu */
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+
+    .navbar-brand {
+        font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+        color: #fed136;
+
+        &:hover, &:focus, &:active, &.active {
+            color: #fec503;
+        }
+    }
+
+    .navbar-nav {
+        // Estilo base dos links
+        .nav-link {
+            text-transform: uppercase;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #fff;
+            transition: all 0.3s ease;
+            padding: 10px 15px;
+
+            &:hover, &:focus {
+                outline: 0;
+                color: #fed136;
+            }
+        }
+
+        // Estilo do botão amarelo quando ativo
+        .nav-link.active {
+            color: #fff;
+            background-color: #fed136;
+            border-radius: 3px;
+            transition: all 0.9s ease;
+
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #fec503;
+            }
+        }
+    }
+}
+
+// Ajustes responsivos para telas maiores (Desktop)
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        transition: padding .3s;
+
+        .navbar-brand {
+            font-size: 2em;
+        }
+
+        &.navbar-shrink {
+            padding: 10px 0;
+            background-color: #222;
+
+            .navbar-brand {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

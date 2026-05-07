@@ -1,0 +1,290 @@
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(/assets/img/capa3.jpg);
+
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+  margin-bottom: 25px;
+
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  color: #FFFFFF;
+  //font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+}
+
+header .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #EAEAAE;
+
+}
+
+@media(min-width:768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  header .intro-text .intro-lead-in {
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    //line-width: 20px;
+
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .90));
+    transform: rotate(-9deg);
+  }
+
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 75px;
+    font-weight: 100;
+    line-height: 75px;
+
+  }
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+//Icones da sessao de servicos
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fed136; // mesma cor amarela do seu tema
+  transition: all 0.3s;
+
+  i {
+    font-size: 4rem;
+    color: #fff; // ícone branco dentro do círculo
+  }
+}
+
+// Efeito de hover (opcional, igual ao original)
+.icon-circle:hover {
+  background-color: #fec503;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(254, 209, 54, .9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 0.5;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  margin: 0;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+@media(min-width:767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+
+aside.clients img {
+  margin: 50px auto;
+}
+
+section#contato {
+  background-color: #222;
+  background-image: url(/assets/img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#contato .section-heading {
+  color: #fff;
+}
+
+section#contato .form-group {
+  margin-bottom: 25px;
+}
+
+section#contato .form-group input,
+section#contato .form-group textarea {
+  padding: 20px;
+}
+
+section#contato .form-group input.form-control {
+  height: auto;
+}
+
+section#contato .form-group textarea.form-control {
+  height: 236px;
+}
+
+section#contato .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+section#contato::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contato:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contato::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contato:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contato .text-danger {
+  color: #e74c3c;
+}
+
+:-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}

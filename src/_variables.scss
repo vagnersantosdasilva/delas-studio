@@ -1,0 +1,78 @@
+// =========================================
+// E-COMMERCE THEME (LIGHT MODE)
+// Foco em Conversão, Confiança e Legibilidade
+// Grid de 8px como base
+// =========================================
+
+// === CORES DE AÇÃO E ESTADO ===
+// Cores vibrantes que se destacam no fundo claro
+$color-primary: #2563eb;      // Azul (Ação principal: Comprar, Adicionar)
+$color-success: #16a34a;      // Verde (Confirmação, Estoque disponível)
+$color-danger: #dc2626;       // Vermelho (Erro, Urgência, Promoção)
+$color-warning: #d97706;      // Laranja (Atenção)
+$color-info: #0891b2;         // Azul claro (Informação)
+
+// === CORES DE DESTAQUE ===
+$color-hot: #f97316;          // Laranja vibrante para selos "Hot Deal" ou desconto
+
+// === BACKGROUNDS (Estrutura da página) ===
+$bg-canvas: #f8fafc;          // Fundo da página (Cinza claríssimo)
+$bg-card: #ffffff;            // Fundo dos cards de produto (Branco)
+$bg-hover: #f1f5f9;           // Hover de elementos (cinza suave)
+
+// === CORES DE TEXTO (Hierarquia) ===
+$text-primary: #0f172a;       // Texto principal (Títulos, valores)
+$text-secondary: #334155;     // Texto secundário (Descrições)
+$text-muted: #64748b;         // Texto de apoio (Referências, legendas)
+$text-white: #ffffff;         // Texto sobre fundos escuros/coloridos
+
+// === CORES SECUNDÁRIAS (Elementos neutros) ===
+$color-secondary: #94a3b8;    // Usado em bordas, divisores e ícones neutros
+$color-light: #f8fafc;        // Fundo claro (Branco)
+
+// === SISTEMA DE ESPAÇAMENTO (8px Grid) ===
+$space-xs: 0.5rem;   // 8px
+$space-sm: 0.75rem;  // 12px
+$space-md: 1rem;     // 16px
+$space-lg: 1.5rem;   // 24px
+$space-xl: 2rem;     // 32px
+$space-xxl: 3rem;    // 48px
+
+// === COMPONENTES (Tamanhos fixos) ===
+$height: 42px;          // Altura ideal para toque em mobile e desktop
+
+// === BORDAS ===
+$radius-md: 6px;              // Arredondamento padrão (suave sem ser infantil)
+$radius-lg: 12px;             // Para modais e cards grandes
+$radius-full: 9999px;         // Para badges e avatares
+
+// === SOMBRAS (Elevação) ===
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+// === TIPOGRAFIA ===
+// Tamanhos de fonte
+$font-size-xs: 0.75rem;   // 12px (Badges, selos)
+$font-size-sm: 0.875rem;  // 14px (Preços antigos, legendas)
+$font-size-md: 1rem;      // 16px (Corpo de texto)
+$font-size-lg: 1.125rem;  // 18px (Subtítulos)
+$font-size-xl: 1.25rem;   // 20px (Títulos de produto)
+$font-size-xxl: 1.5rem;   // 24px (Preço grande)
+$font-size-xxxl: 2rem;    // 32px (Display)
+
+// Pesos
+$font-weight-lighter: 100;
+$font-weight-light: 200;
+$font-weight-base: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+
+// === TRANSIÇÕES ===
+$transition-fast: all 0.2s ease;
+
+// Cor de borda neutra para inputs e cards
+$border-color: rgba($color-secondary, 0.4);
