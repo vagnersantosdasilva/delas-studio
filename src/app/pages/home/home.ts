@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { ActiveSectionService } from '../../services/section-service/active-section-service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, CommonModule],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
@@ -13,7 +14,7 @@ export class Home implements AfterViewInit, OnDestroy {
 
   private observer!: IntersectionObserver;
 
-  constructor(private activeSectionService: ActiveSectionService) {}
+  constructor(private activeSectionService: ActiveSectionService) { }
 
   scrollToServicos(event: Event): void {
     event.preventDefault();
@@ -25,16 +26,31 @@ export class Home implements AfterViewInit, OnDestroy {
     }
   }
 
-  enviarContato(form: NgForm): void {
-    if (form.valid) {
-      console.log('Formulário enviado', form.value);
-      // Aqui você pode chamar um serviço HTTP para enviar o e-mail
-      alert('Mensagem enviada com sucesso!');
-      form.reset();
-    } else {
-      alert('Preencha todos os campos corretamente.');
+  whatsappNumber = '5521982157519'; // substitua pelo número da empresa
+
+  enviarContato(form: any): void {
+    if (form.invalid) {
+      // Irá mostrar as mensagens de erro nos campos
+      Object.keys(form.controls).forEach(key => {
+        form.controls[key].markAsTouched();
+      });
+      return;
     }
+
+    const { nome, email, telefone, mensagem } = form.value;
+    const texto = `*Novo contato do site*%0A%0A` +
+      `*Nome:* ${encodeURIComponent(nome)}%0A` +
+      `*E-mail:* ${encodeURIComponent(email)}%0A` +
+      `*Telefone:* ${encodeURIComponent(telefone)}%0A%0A` +
+      `*Mensagem:*%0A${encodeURIComponent(mensagem)}`;
+
+    const url = `https://wa.me/${this.whatsappNumber}?text=${texto}`;
+    window.open(url, '_blank');
+
+    form.reset(); // limpa o formulário após abrir
+
   }
+
 
   ngAfterViewInit() {
     this.setupScrollSpy();
