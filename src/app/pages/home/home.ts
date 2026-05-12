@@ -26,7 +26,7 @@ export class Home implements AfterViewInit, OnDestroy {
     }
   }
 
-  whatsappNumber = '5521982157519'; // substitua pelo número da empresa
+  whatsappNumber = '5521972332809'; // zap da empresa
 
   enviarContato(form: any): void {
     if (form.invalid) {

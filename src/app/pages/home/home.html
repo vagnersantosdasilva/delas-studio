@@ -3,8 +3,14 @@
   <div class="container">
     <div class="intro-text">
 
-      <div class="intro-lead-in"><br><br><b>Registrando seus melhores momentos !﻿</b><br><br>
-        <a href="#services" class="page-scroll btn btn-xl">Veja mais</a><br><br><br>
+      <div class="intro-lead-in">
+        <h2 class="intro-heading">Fotografia & Filmagem<br><span class="highlight">Que emocionam para sempre</span></h2>
+
+        <!-- Subtítulo / benefício -->
+        <p class="intro-subheading">Ensaios externos, estúdio temático e cobertura completa de eventos.<br>Você no
+          centro de cada detalhe.</p>
+
+        <a href="#servicos" class="page-scroll btn btn-primary">Veja mais</a><br><br><br>
       </div>
 
 
@@ -121,13 +127,8 @@
             <div class="col-md-6">
               <!-- Campo Nome -->
               <div class="form-group" [class.has-error]="nome.touched && nome.invalid">
-                <input type="text"
-                       class="form-control"
-                       placeholder="Nome *"
-                       name="nome"
-                       #nome="ngModel"
-                       ngModel
-                       required>
+                <input type="text" class="form-control" placeholder="Nome *" name="nome" #nome="ngModel" ngModel
+                  required>
                 <p class="help-block text-danger" *ngIf="nome.touched && nome.errors?.['required']">
                   Por favor escreva seu nome.
                 </p>
@@ -135,14 +136,8 @@
 
               <!-- Campo Email -->
               <div class="form-group" [class.has-error]="email.touched && email.invalid">
-                <input type="email"
-                       class="form-control"
-                       placeholder="Email *"
-                       name="email"
-                       #email="ngModel"
-                       ngModel
-                       required
-                       email>
+                <input type="email" class="form-control" placeholder="Email *" name="email" #email="ngModel" ngModel
+                  required email>
                 <p class="help-block text-danger" *ngIf="email.touched && email.errors?.['required']">
                   Por favor escreva seu endereço de e-mail.
                 </p>
@@ -153,13 +148,8 @@
 
               <!-- Campo Telefone -->
               <div class="form-group" [class.has-error]="telefone.touched && telefone.invalid">
-                <input type="tel"
-                       class="form-control"
-                       placeholder="Telefone *"
-                       name="telefone"
-                       #telefone="ngModel"
-                       ngModel
-                       required>
+                <input type="tel" class="form-control" placeholder="Telefone *" name="telefone" #telefone="ngModel"
+                  ngModel required>
                 <p class="help-block text-danger" *ngIf="telefone.touched && telefone.errors?.['required']">
                   Por favor escreva seu número de telefone.
                 </p>
@@ -169,13 +159,8 @@
             <div class="col-md-6">
               <!-- Campo Mensagem -->
               <div class="form-group" [class.has-error]="mensagem.touched && mensagem.invalid">
-                <textarea class="form-control"
-                          placeholder="Sua Mensagem *"
-                          name="mensagem"
-                          #mensagem="ngModel"
-                          ngModel
-                          rows="5"
-                          required></textarea>
+                <textarea class="form-control" placeholder="Sua Mensagem *" name="mensagem" #mensagem="ngModel" ngModel
+                  rows="5" required></textarea>
                 <p class="help-block text-danger" *ngIf="mensagem.touched && mensagem.errors?.['required']">
                   Escreva sua mensagem.
                 </p>
