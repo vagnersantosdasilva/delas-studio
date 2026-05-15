@@ -38,7 +38,6 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
   margin-bottom: 30px;
-
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 
@@ -58,11 +57,8 @@ header .intro-text .intro-lead-in p {
 
 @media (max-width: 767px) {
   header .intro-text .intro-lead-in {
-
     line-height: 0.5;
     transform: rotate(0deg);
-
-
   }
 }
 
