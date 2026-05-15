@@ -38,7 +38,7 @@ export class Home implements AfterViewInit, OnDestroy {
     }
 
     const { nome, email, telefone, mensagem } = form.value;
-    const texto = `*Novo contato do site*%0A%0A` +
+    const texto = `` +
       `*Nome:* ${encodeURIComponent(nome)}%0A` +
       `*E-mail:* ${encodeURIComponent(email)}%0A` +
       `*Telefone:* ${encodeURIComponent(telefone)}%0A%0A` +
