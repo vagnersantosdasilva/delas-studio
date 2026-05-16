@@ -21,8 +21,8 @@
             "polyfills": [
               "zone.js"
             ],
-            "baseHref": "/delas-estudio/",
-            "deployUrl": "/delas-estudio/",
+            "baseHref": "/delas-studio/",
+            "deployUrl": "/delas-studio/",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
 
